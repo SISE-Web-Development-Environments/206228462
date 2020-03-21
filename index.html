@@ -1,193 +1,140 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Oscar's website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+  <div class="header">
+    <a href="#default" class="logo">Oscar Epshtein </a>
+    <div class="header-right">
+      <a href="#about">About Me</a></li>
+      <a href="#photos">My Photos</a></li>
+      <a href="#playlist">My Playlist</a></li>
+      <a href="#like">Like</a></li>
+      <a href="#qrcoder">QR code</a></li>
+      <a href="#spa">Q&A</a></li>
+      <a href="#contact">Contact Me</a></li>
+    </div>
+  </div>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+  <div class="wrapper">
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>
+        <strong> My name is Oscar Epshtein</strong>,
+        I am a third-year Software and information system engineering student, at Ben-Gurion University.
+        <br />
+        This is my first website and this is where my web development journey begins.
+        <br />
+        In addition to being a busy student, I love making food, listening to music and winning at Catan.
+        <br />
+        <br />
+      </p>
+    </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="photos" class="section">
+      <hr>
+      </hr>
+      <h1> Photos </h1>
+      <br />
+      <img src="img/Oscar_HongKong.JPG" alt="Paris" width="300" height="300">
+      <img src="img/Oscar_Lev.JPG" alt="Oscar_Lev" width="340" height="300">
+      <img src="img/Japan.JPG" alt="Tokyu" width="310" height="300">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="playlist" class="section">
+      <hr>
+      </hr>
+      <br />
+      <h1> Good Music </h1>
+      <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9A1600EA18716662"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </center>
+      <br />
+      <br />
+      <br />
+    </section>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+    <section id="like" class="Like">
+      <hr>
+      </hr>
+      <h1> Give Daft Punk a like </h1>
+      <br />
+      <div class="fb-like" data-href="https://www.facebook.com/daftpunk/" data-width="" data-layout="standard"
+        data-action="like" data-size="small" data-share="true"></div>
+      <br />
+      <br />
+    </section>
+
+    <section id="qrcoder" class="section">
+      <hr>
+      </hr>
+      <br />
+      <h1>Scan Me!</h1>
+      <br />
+      <br />
+    </section>
+
+    <section id="spa" class="section">
+      <hr>
+      </hr>
+      <br />
+      <h1>Q&A</h1>
+      <br />
+    </section>
+
+    <section id="contact" class="section">
+      <br />
+     
+      <hr>
+      </hr>
+      <h1>Contact Me!</h1>
+      <form action="mailto:oscarep@post.bgu.ac.il" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <textarea name="comments" rows="4" cols="36" id="someid"  ></textarea>
+        <p>🍔</p>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+      <br />
+      <br />
+      <br />
+    </section>
+  </div>
+
+
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
 </body>
+
 </html>
