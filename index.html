@@ -5,6 +5,9 @@
   <title>Oscar's website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"> </script>
 </head>
 
 <body>
@@ -97,6 +100,7 @@
       <br />
     </section>
 
+
     <section id="contact" class="section">
       <br />
      
@@ -109,8 +113,7 @@
         E-mail:<br>
         <input type="text" name="mail"><br>
         Comment:<br>
-        <textarea name="comments" rows="4" cols="36" id="someid"  ></textarea>
-        <p>🍔</p>
+        <textarea name="comments" rows="4" cols="36" id="mytextarea"  ></textarea>
         <br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
@@ -118,6 +121,7 @@
       <br />
       <br />
       <br />
+      
     </section>
   </div>
 
@@ -134,6 +138,12 @@
     $(document).scroll(function () {
       $('#menu').toggle($(this).scrollTop() > 1000)
     });​
+  </script>
+
+  <script>
+    $("#mytextarea").emojioneArea({
+      pickerPosition:"right"
+    })
   </script>
 </body>
 
