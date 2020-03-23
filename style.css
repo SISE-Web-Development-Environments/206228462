@@ -74,4 +74,3 @@ body {
 section{
   text-align: center;
 }
-document.getElementById('someid').value += 'text to insert';
