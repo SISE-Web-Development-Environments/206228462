@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Oscar's website</title>
+  <title>Levs Epshtein's Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -15,7 +15,7 @@
   <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
   <div class="header">
-    <a href="#default" class="logo">Oscar Epshtein </a>
+    <a href="#default" class="logo">Lev Epshtein </a>
     <div class="header-right">
       <a href="#about">About Me</a></li>
       <a href="#photos">My Photos</a></li>
@@ -24,6 +24,7 @@
       <a href="#qrcoder">QR code</a></li>
       <a href="#spa">Q&A</a></li>
       <a href="#contact">Contact Me</a></li>
+      <a href="oscars.html" class="btn-get-started scrollto">to oOscar's</a>
     </div>
   </div>
 
@@ -37,12 +38,11 @@
 
       <h1>About Me</h1>
       <p>
-        <strong> My name is Oscar Epshtein</strong>,
-        I am a third-year Software and information system engineering student, at Ben-Gurion University.
+        <strong> My name is Lev Epshtein</strong>,
+        I am 86 years old pensioner, a former enginer, living in Reahovot,Israel.
+        I Hava a schnauzer called Boni. In my free time I enjoy sovling soduko and playing Chess.
         <br />
-        This is my first website and this is where my web development journey begins.
         <br />
-        In addition to being a busy student, I love making food, listening to music and winning at Catan.
         <br />
         <br />
       </p>
@@ -56,9 +56,9 @@
       </hr>
       <h1> Photos </h1>
       <br />
-      <img src="img/hongkong.JPG" alt="Paris" width="300" height="300">
+      <img src="img/family.JPG" alt="Family" width="380" height="300">
       <img src="img/oscarlev.JPG" alt="Oscar_Lev" width="340" height="300">
-      <img src="img/tokyo.JPG" alt="Tokyu" width="310" height="300">
+      <img src="img/boni_dog.JPG" alt="Boni" width="340" height="300">
       <br />
       <br />
       <br />
@@ -75,7 +75,8 @@
       <br />
       <h1> Good Music </h1>
       <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLEB5BF32311394500" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9A1600EA18716662"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </center>
       <br />
       <br />
@@ -219,6 +220,28 @@
 
 
     <section id="contact" class="section">
+      <br />
+
+      <hr>
+      </hr>
+      <h1>Contact Me!</h1>
+      <form action="mailto:oscarep@post.bgu.ac.il" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <textarea name="comments" rows="4" cols="36" id="mytextarea"></textarea>
+        <br>
+        <input type="submit" value="Send" onclick="add()">
+        <input type="reset" value="Reset">
+      </form>
+      <br />
+      <br />
+      <br />
+    </section>
+    
+    <section id="toOscars" class="section">
       <br />
 
       <hr>
